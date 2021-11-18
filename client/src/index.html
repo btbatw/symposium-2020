@@ -5,6 +5,13 @@
 	<meta charset="utf-8">
 	<title>BTBA SYMPOSIUM 2020</title>
 	<base href="/">
+	<script>
+		var baseHref = document.location.href
+			.replace(document.location.origin, "")
+			.replace("index.html", "");
+		document.head.getElementsByTagName('base')[0]
+			.setAttribute('href', baseHref);
+	</script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script>
